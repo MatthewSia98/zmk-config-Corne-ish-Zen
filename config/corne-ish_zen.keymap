@@ -3,11 +3,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define COLEMAK 0
-#define QWERTY 1
-#define NAV 2
-#define NUM 3 
-#define SYM 4
+#define CLMK 0
+#define NAV 1
 
 
 / {
@@ -24,7 +21,7 @@
    &kp Q           &kp W           &kp F           &kp P           &kp B           &kp J           &kp L                   &kp U                   &kp Y                   &kp SQT              
    &kp A      &kp R      &kp S     &kp T    &kp G           &kp M           &kp N            &kp E             &kp I              &kp O           
    &kp Z           &kp X           &kp C           &kp D           &kp V           &kp K           &kp H                   &kp COMMA               &kp DOT                 &kp SLASH                
-                                   &kp ESC         &kp BSPC    &kp TAB         &kp RET     &kp SPACE           &none
+                                   &kp ESC         &lt NAV BSPC    &kp TAB         &kp RET     &kp SPACE           &none
                         >;
                 };
 //
