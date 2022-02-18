@@ -5,6 +5,7 @@
 
 #define CLMK 0
 #define NAV 1
+#define NUM 2
 
 
 &mt {
@@ -23,9 +24,9 @@
                         label="CLM";
                         bindings = <
    &kp Q           &kp W           &kp F           &kp P           &kp B           &kp J           &kp L                   &kp U                   &kp Y                   &kp SQT              
-   &kp A      &kp R      &kp S     &mt LSHIFT T    &kp G           &kp M           &mt RSHIFT N            &kp E             &kp I              &kp O           
+   &mt LGUI A      &mt LALT R      &mt LCTRL S     &mt LSHIFT T    &kp G           &kp M           &mt RSHIFT N            &mt RCTRL E             &mt RALT I              &mt RGUI O           
    &kp Z           &kp X           &kp C           &kp D           &kp V           &kp K           &kp H                   &kp COMMA               &kp DOT                 &kp SLASH                
-                                   &kp ESC         &lt NAV BSPC    &kp TAB         &kp RET     &kp SPACE           &none
+                                   &kp ESC         &lt NAV BSPC    &kp TAB         &lt NUM RET     &kp SPACE           &none
                         >;
                 };
 //
@@ -44,29 +45,29 @@
                         bindings = <
    &none           &none           &none           &none           &none           &none           &none                   &none                   &none                   &none
    &none           &none           &none           &none           &none           &none           &kp LEFT                &kp DOWN                  &kp UP                  &kp RIGHT                  
-   &none           &none           &none           &none           &none           &none           &kp HOME                   &none                 &none                &kp END                   
-                          	       &kp LGUI        &none           &kp SPACE       &kp RET         &none                   &none
+   &none           &none           &none           &none           &none           &none           &kp HOME                &none                 &none                &kp END                   
+                          	   &none           &none           &none           &none           &none                   &none
                         >;
                 };
 
-//                num_layer {
-//                        label="NBR";
-//                        bindings = <
-//   &reset          &kp N7          &kp N8          &kp N9          &none          &kp CARET       &kp AMPS                &none                   &kp LPAR                &kp RPAR               
-//   &none           &kp N4          &kp N5          &kp N6          &none          &kp MINUS       &kp EQUAL               &kp LBKT                &kp RBKT                &kp BSLH               
-//   &none           &kp N1          &kp N2          &kp N3          &none          &kp UNDER       &kp PLUS                &kp LBRC                &kp RBRC                &kp PIPE               
-//                    	           &kp UNDER       &kp N0          &kp PIPE       &kp RET         &none                   &none
-//                        >;
-//                };
+                num_layer {
+                        label="NBR";
+                        bindings = <
+   &reset          &kp N7          &kp N8          &kp N9          &none                &none       &none       &none           &none               &none              
+   &none           &kp N4          &kp N5          &kp N6          &none                &none       &none       &none           &none               &none              
+   &none           &kp N1          &kp N2          &kp N3          &none                &none       &none       &none           &none               &none              
+                    	           &kp UNDER       &trans          &kp N0               &none       &none       &none
+                        >;
+                };
 
-//                sym_layer {
-//                        label="SYM";
-//                        bindings = <
-//   &kp LBRC         &kp AMPS        &kp STAR        &kp BSLH       &kp RBRC       &kp CARET       &kp AMPS                &kp KP_MULTIPLY         &kp LPAR                &kp RPAR                
-//   &kp LPAR         &kp DLLR        &kp PRCNT       &kp CARET      &kp RPAR       &kp MINUS       &kp EQUAL               &kp LBKT                &kp RBKT                &kp BSLH                
-//   &kp LBKT         &kp EXCL        &kp AT          &kp HASH       &kp RBKT       &kp UNDER       &kp PLUS                &kp LBRC                &kp RBRC                &kp PIPE                
-//                    	            &kp UNDER       &none          &none          &kp RET         &none                   &none
-//                        >;
-//               };
+                sym_layer {
+                        label="SYM";
+                        bindings = <
+   &kp LBRC         &kp AMPS        &kp STAR        &kp BSLH       &kp RBRC       &none       &none                &none         &none                &none                
+   &kp LPAR         &kp DLLR        &kp PRCNT       &kp CARET      &kp RPAR       &none       &none               &none                &none                &none                
+   &kp LBKT         &kp EXCL        &kp AT          &kp HASH       &kp RBKT       &none       &none                &none                &none                &none                
+                    	            &none           &none          &none          &none       &none                   &none
+                        >;
+               };
         };
 };
