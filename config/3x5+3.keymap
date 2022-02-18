@@ -69,9 +69,9 @@
                 sym_layer {
                         label="SYMBOL";
                         bindings = <
-   &kp LBRC         &kp AMPS        &kp STAR        &kp BSLH       &RBRC          &kp CARET       &kp AMPS                &kp KP_MULTIPLY         &kp LPAR                &kp RPAR                
-   &kp LPAR         &kp DLLR        &kp PRCNT       &kp CARET      &RPAR          &kp MINUS       &kp EQUAL               &kp LBKT                &kp RBKT                &kp BSLH                
-   &kp LBKT         &kp EXCL        &kp AT          &kp HASH       &RBKT          &kp UNDER       &kp PLUS                &kp LBRC                &kp RBRC                &kp PIPE                
+   &kp LBRC         &kp AMPS        &kp STAR        &kp BSLH       &kp RBRC       &kp CARET       &kp AMPS                &kp KP_MULTIPLY         &kp LPAR                &kp RPAR                
+   &kp LPAR         &kp DLLR        &kp PRCNT       &kp CARET      &kp RPAR       &kp MINUS       &kp EQUAL               &kp LBKT                &kp RBKT                &kp BSLH                
+   &kp LBKT         &kp EXCL        &kp AT          &kp HASH       &kp RBKT       &kp UNDER       &kp PLUS                &kp LBRC                &kp RBRC                &kp PIPE                
                     	            &kp UNDER       &none          &none          &kp RET         &none                   &none
                         >;
                 };
