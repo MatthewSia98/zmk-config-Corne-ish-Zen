@@ -7,6 +7,10 @@
 #define NAV 1
 
 
+&mt {
+    tapping-term-ms = <200>;
+};
+
 / {
         chosen {
             zmk,matrix_transform = &five_column_transform;
@@ -19,7 +23,7 @@
                         label="CLM";
                         bindings = <
    &kp Q           &kp W           &kp F           &kp P           &kp B           &kp J           &kp L                   &kp U                   &kp Y                   &kp SQT              
-   &kp A      &kp R      &kp S     &kp T    &kp G           &kp M           &kp N            &kp E             &kp I              &kp O           
+   &kp A      &kp R      &kp S     &mt LSHIFT T    &kp G           &kp M           &mt LSHIFT N            &kp E             &kp I              &kp O           
    &kp Z           &kp X           &kp C           &kp D           &kp V           &kp K           &kp H                   &kp COMMA               &kp DOT                 &kp SLASH                
                                    &kp ESC         &lt NAV BSPC    &kp TAB         &kp RET     &kp SPACE           &none
                         >;
