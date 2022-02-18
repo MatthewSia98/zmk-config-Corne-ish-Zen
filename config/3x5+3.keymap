@@ -15,6 +15,13 @@
 #define NUM 3 
 #define SYM 4
 
+
+&mt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <150>;
+};
+
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -25,7 +32,7 @@
    &kp Q           &kp W           &kp F           &kp P           &kp B           &kp J           &kp L                   &kp U                   &kp Y                   &kp SQT              
    &mt LGUI A      &mt LALT R      &mt LCTRL S     &mt LSHIFT T    &kp G           &kp M           &mt LSHIFT N            &mt LCTRL E             &mt LALT I              &mt LGUI O           
    &kp Z           &kp X           &kp C           &kp D           &kp V           &kp K           &kp H                   &kp COMMA               &kp DOT                 &kp SLASH                
-                                   &kp ESC         &lt NAV BSPC    &kp TAB         &lt NUM RET     &lt SYM SPACE           &kp RALT
+                                   &kp ESC         &lt NAV BSPC    &kp TAB         &lt NUM RET     &lt SYM SPACE           &none
                         >;
                 };
 
@@ -35,7 +42,7 @@
    &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U                   &kp I                   &kp O                   &kp P              
    &mt LGUI A      &mt LALT S      &mt LCTRL D     &mt LSHIFT F    &kp G           &kp H           &mt LSHIFT J            &mt LCTRL K             &mt LALT L              &mt LGUI SQT           
    &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M                   &kp COMMA               &kp DOT                 &kp SLASH                
-                                   &kp ESC         &lt NAV BSPC    &kp TAB         &lt NUM RET     &lt SYM SPACE           &kp RALT
+                                   &kp ESC         &lt NAV BSPC    &kp TAB         &lt NUM RET     &lt SYM SPACE           &none
                         >;
                 };
 
@@ -45,17 +52,17 @@
    &none           &none           &none           &none           &none           &none           &none                   &none                   &none                   &none
    &none           &none           &none           &none           &none           &kp LEFT        &kp DOWN                &kp UP                  &kp RIGHT               &none                   
    &none           &none           &none           &none           &none           &kp HOME        &none                   &none                   &kp END                 &none                   
-                          	       &kp LGUI        &none           &kp SPACE       &kp RET         &none                  &kp RALT
+                          	       &kp LGUI        &none           &kp SPACE       &kp RET         &none                   &none
                         >;
                 };
 
                 num_layer {
                         label="NUMBER";
                         bindings = <
-   &none           &kp N7          &kp N8          &kp N9          &none          &kp CARET       &kp AMPS                &kp KP_MULTIPLY         &kp LPAR                &kp RPAR               
+   &reset          &kp N7          &kp N8          &kp N9          &none          &kp CARET       &kp AMPS                &none                   &kp LPAR                &kp RPAR               
    &none           &kp N4          &kp N5          &kp N6          &none          &kp MINUS       &kp EQUAL               &kp LBKT                &kp RBKT                &kp BSLH               
    &none           &kp N1          &kp N2          &kp N3          &none          &kp UNDER       &kp PLUS                &kp LBRC                &kp RBRC                &kp PIPE               
-                    	           &kp UNDER       &none           &kp N0         &kp RET         &none                   &kp RALT
+                    	           &kp UNDER       &kp N0          &kp PIPE       &kp RET         &none                   &none
                         >;
                 };
 
@@ -65,7 +72,7 @@
    &kp LBRC         &kp AMPS        &STAR           &kp BSLH       &RBRC          &kp CARET       &kp AMPS                &kp KP_MULTIPLY         &kp LPAR                &kp RPAR                
    &kp LPAR         &kp DLLR        &kp PRCNT       &kp CARET      &RPAR          &kp MINUS       &kp EQUAL               &kp LBKT                &kp RBKT                &kp BSLH                
    &kp LBKT         &kp EXCL        &kp AT          &kp HASH       &RBKT          &kp UNDER       &kp PLUS                &kp LBRC                &kp RBRC                &kp PIPE                
-                    	            &kp UNDER       &none          &kp N0         &kp RET         &none                   &kp RALT
+                    	            &kp UNDER       &none          &kp N0         &kp RET         &none                   &none
                         >;
                 };
         };
