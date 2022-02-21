@@ -10,7 +10,8 @@
 
 
 &mt {
-    tapping-term-ms = <300>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
 };
 
 / {
