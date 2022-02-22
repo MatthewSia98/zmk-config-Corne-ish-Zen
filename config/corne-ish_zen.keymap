@@ -25,7 +25,7 @@
         };
 
         chosen {
-                zmk,matrix_noneform = &five_column_noneform;
+                zmk,matrix_noneform = &five_column_transform;
         };
         
         keymap {
