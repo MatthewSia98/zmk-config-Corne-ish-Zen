@@ -57,7 +57,7 @@
    &none           &none           &none           &none           &none                   &none           &none        &none           &none           &none
    &none           &none           &none           &none           &none                   &none           &kp LEFT     &kp DOWN        &kp UP          &kp RIGHT                  
    &none           &none           &none           &none           &none                   &none           &kp HOME     &none           &none           &kp END                   
-                          	   &none           &none           &none                   &none           &none        &none
+                          	   &none           &none           &none                   &trans           &trans        &none
                         >;
                 };
 
@@ -67,7 +67,7 @@
    &reset          &kp N7          &kp N8          &kp N9          &none                      &none       &none       &none     &none     &none              
    &none           &kp N4          &kp N5          &kp N6          &none                      &none       &none       &none     &none     &none              
    &none           &kp N1          &kp N2          &kp N3          &none                      &none       &none       &none     &none     &none              
-                    	           &trans          &none           &kp N0                     &none       &none       &none
+                    	           &kp UNDER       &trans          &kp N0                     &none       &none       &none
                         >;
                 };
 
@@ -77,7 +77,7 @@
    &kp LBRC         &kp AMPS        &kp STAR        &kp BSLH       &kp RBRC                     &none           &kp EQUAL       &kp PLUS        &kp MINUS       &none              
    &kp LPAR         &kp DLLR        &kp PRCNT       &kp CARET      &kp RPAR                     &none           &kp DQT         &kp SQT         &kp COLON       &kp SEMI                
    &kp LBKT         &kp EXCL        &kp AT          &kp HASH       &kp RBKT                     &none           &kp PG_DN       &kp PG_UP       &none           &none                
-                    	            &kp UNDER       &none          &none                        &none           &none           &none
+                    	            &trans          &trans         &none                        &none           &none           &none
                         >;
                };
 
