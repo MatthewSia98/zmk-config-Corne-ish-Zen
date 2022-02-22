@@ -74,10 +74,10 @@
                 sym_layer {
                         label="SYM";
                         bindings = <
-   &kp LBRC         &kp AMPS        &kp STAR        &kp BSLH       &kp RBRC       &none       &none                &none         &none                &none                
-   &kp LPAR         &kp DLLR        &kp PRCNT       &kp CARET      &kp RPAR       &none       &none               &none                &none                &none                
-   &kp LBKT         &kp EXCL        &kp AT          &kp HASH       &kp RBKT       &none       &none                &none                &none                &none                
-                    	            &none           &none          &none          &none       &none                   &none
+   &kp LBRC         &kp AMPS        &kp STAR        &kp BSLH       &kp RBRC                     &kp EQUAL       &kp PLUS        &kp MINUS       &none           &none                
+   &kp LPAR         &kp DLLR        &kp PRCNT       &kp CARET      &kp RPAR                     &none           &kp DQT         &kp SQT         &kp COLON       &kp SEMI                
+   &kp LBKT         &kp EXCL        &kp AT          &kp HASH       &kp RBKT                     &none           &none           &none           &none           &none                
+                    	            &none           &none          &none                        &none           &none           &none
                         >;
                };
         };
